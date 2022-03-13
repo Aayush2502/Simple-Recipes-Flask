@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>login page</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="static/css/login-style.css" />
+  </head>
+
+  <body>
+    <form class="form-signin" action="/dashboard" method="post">
+      <div class="fullBox">
+        <div class="container">
+          <h1>Log In</h1>
+          <div class="box">
+            <i class="fa fa-envelope"></i>
+            <input
+              type="text"
+              name="uname"
+              id="uname"
+              placeholder="Enter Your uname"
+            />
+          </div>
+
+          <div class="box">
+            <i class="fa fa-key"></i>
+            <input
+              type="password"
+              name="pass"
+              id="pass"
+              placeholder="Enter Your Password"
+            />
+          </div>
+          <button class="btn" type="submit">Sign In</button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

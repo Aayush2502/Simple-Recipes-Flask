@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="static/vendors/css/normalize.css"
+    />
+    <link rel="stylesheet" type="text/css" href="static/vendors/css/grid.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="static/vendors/fonts/fontawesome-free-5.15.4-web/css/all.css"
+    />
+    <link rel="stylesheet" type="text/css" href="static/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="static\img\favicon\apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="static\img\favicon\favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="static\img\favicon\favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <title>Simple Recipes</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="row">
+        <a href="index.html"
+          ><img
+            src="static/img/Simple Recipes-logos/Simple Recipes-logos_white.png"
+            alt="Simple Recipes Logo"
+            class="logo"
+        /></a>
+        <ul class="main-nav">
+          <li><a href="/">Home</a></li>
+          <li><a href="recipes">Recipes</a></li>
+          <li><a href="tags">Tags</a></li>
+          <li><a href="about">About</a></li>
+          <li>
+            <a href="dashboard"
+              ><img src="static/img/customer-1.jpg" alt="Profile"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    {% block body %} {% endblock %}
+
+    <footer class="footer">
+      <div class="row">
+        <div class="col span-1-of-4">
+          <h2 class="footer-text">Find us on</h2>
+          <img
+            class="footer-logo"
+            src="static/img/Simple Recipes-logos/Simple Recipes-logos.jpeg"
+            alt="Footer logo"
+          />
+          <ul class="social-buttons">
+            <li>
+              <a href="facebook.com"
+                ><ion-icon name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a href="twitter.com"
+                ><ion-icon name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a href="instagram.com"
+                ><ion-icon name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col span-1-of-4">
+          <h2 class="footer-text">Contact Us</h2>
+          <ul class="contact">
+            <li>623 Harrison St., 2nd Floor, San Francisco, CA 94107</li>
+            <li><a href="tel:916-356-8243">916-356-8243</a></li>
+            <li>
+              <a href="mailto:contact@simplerecipes.com"
+                >contact@simplerecipes.com</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="col span-1-of-4">
+          <h2 class="footer-text">Also On</h2>
+          <ul class="social-buttons">
+            <li>
+              <a href="playstore.com"
+                ><ion-icon name="logo-google-playstore"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a href="iosstore.com"
+                ><ion-icon name="logo-apple-appstore"></ion-icon
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col span-1-of-4">
+          <h2 class="footer-text">Quick Links</h2>
+          <ul class="contact">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="tags.html">Tags</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

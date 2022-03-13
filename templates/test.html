@@ -1,0 +1,55 @@
+{% extends "layout.html" %} {% block body %}
+
+<form action="/post-recipes" method="post">
+      <label>Title</label>
+      <input
+        type="text"
+        placeholder="Title"
+        id="title"
+        name="title"
+        message="Please enter your name."
+        value="{{recipes.title}}"
+      />
+      <p class="help-block text-danger"></p>
+    </div>
+  </div>
+  <div class="control-group">
+    <div class="form-group floating-label-form-group controls">
+      <label>Description</label>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Description"
+        id="descript"
+        name="descript"
+        message="Please enter your email address."
+        value="{{recipes.description}}"
+      />
+      <label>Slug</label>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Slug"
+        name="slug"
+        id="slug"
+        message="Slug"
+        value="{{recipes.slug}}"
+      />
+      <label>content</label>
+      <textarea
+        rows="5"
+        placeholder="Content"
+        name="content"
+        id="content"
+        required
+        data-validation-required-message="Please enter a message."
+      >
+{{recipes.content}}</textarea
+      >
+  <br />
+    <button type="submit" class="btn btn-primary" id="sendMessageButton">
+      Submit
+    </button>
+</form>
+
+{% endblock %}
