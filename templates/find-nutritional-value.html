@@ -1,0 +1,32 @@
+{% extends "layout.html" %} {% block body %}
+
+<div class="container">
+  <div class="nutritional-wrapper">
+    <div class="nutritional-search">
+      <h2 class="title">Find Nutritional value of your Food</h2>
+      <div class="search" id="form">
+        <input
+          type="text"
+          placeholder="Search Food"
+          name="query"
+          id="nutritional-search-input"
+        />
+        <button type="submit" id="nutritional-search-btn">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="nutritional-result">
+      <h2 class="title">Your Search Results:</h2>
+      <div id="nutritional">
+        <!-- nutritional item -->
+        <div id="table_heading"></div>
+        <table id="table_data"></table>
+        <!-- end of nutritional item -->
+      </div>
+    </div>
+  </div>
+</div>
+<script src="static/js/nutritional-script.js"></script>
+{% endblock %}

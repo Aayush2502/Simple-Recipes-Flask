@@ -4,8 +4,10 @@ from datetime import datetime
 import json
 
 
-with open('HTML\Flask Mini Project\config.json', 'r') as c:
+'''
+with open('config.json', 'r') as c:
     params = json.load(c)["params"]
+'''
 
 
 app = Flask(__name__)
@@ -50,11 +52,12 @@ def hello():
     return render_template('index.html')
 
 
+'''
 @app.route("/dashboard", methods=['GET', 'POST'])
 def dashboard():
-    '''if ('user' in session and session['user'] == params['admin_user']):
+    ''''''if ('user' in session and session['user'] == params['admin_user']):
         ###posts = Posts.query.all()
-        return render_template('dashboard.html', params=params)'''
+        return render_template('dashboard.html', params=params)''''''
 
     if request.method == 'POST':
         username = request.form.get('uname')
@@ -66,6 +69,7 @@ def dashboard():
             return render_template('rohan2 profile page/index.html', params=params)
 
     return render_template('rohan1 login page/index.html', params=params)
+'''
 
 
 @app.route("/post-recipes", methods=['GET', 'POST'])
@@ -107,6 +111,16 @@ def recipes():
 @app.route("/tags")
 def tags():
     return render_template('tags.html')
+
+
+@app.route("/ingri")
+def ingri():
+    return render_template('ingri.html')
+
+
+@app.route("/find-nutritional-value")
+def nutritional():
+    return render_template('find-nutritional-value.html')
 
 
 app.run(debug=True)
